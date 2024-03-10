@@ -7,14 +7,16 @@ namespace TestowanieOprogramowania
 {
     public partial class Form1 : Form
     {
-
+        public string conString;
+        //Zmieñ dataSource na swoj¹ nazwê serwera
+        private string dataSource = "LAPTOP-72SPAJ8D";
         public Form1()
         {
             InitializeComponent();
-
+            conString = $"Data Source={dataSource};Initial Catalog=MagazynTestowanieOprogramowania;Integrated Security=True; TrustServerCertificate=True;";
         }
-
-        public string conString = "Data Source=LAPTOP-72SPAJ8D;Initial Catalog=MagazynTestowanieOprogramowania;Integrated Security=True; TrustServerCertificate=True;";
+        
+       
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -47,11 +49,10 @@ namespace TestowanieOprogramowania
 
         private void UsunUzytkownikaZBazy(int userId)
         {
-            string connectionString = "Data Source=LAPTOP-72SPAJ8D;Initial Catalog=MagazynTestowanieOprogramowania;Integrated Security=True; TrustServerCertificate=True;";
             UsunPowiazaneUprawnienia(userId);
             string query = "DELETE FROM dbo.Uzytkownicy WHERE UzytkownikID = @userId";
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(conString))
             {
                 using (SqlCommand cmd = new SqlCommand(query, connection))
                 {
@@ -76,10 +77,9 @@ namespace TestowanieOprogramowania
 
         private void UsunPowiazaneUprawnienia(int userId)
         {
-            string connectionString = "Data Source=LAPTOP-72SPAJ8D;Initial Catalog=MagazynTestowanieOprogramowania;Integrated Security=True; TrustServerCertificate=True;";
             string query = "DELETE FROM dbo.Uprawnienia WHERE UzytkownikID = @userId";
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(conString))
             {
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
@@ -112,6 +112,18 @@ namespace TestowanieOprogramowania
                                 Login = reader["Login"].ToString(),
                                 Imie = reader["Imie"].ToString(),
                                 Nazwisko = reader["Nazwisko"].ToString(),
+
+
+                                Miejscowosc = reader["Miejscowosc"].ToString(),
+                                KodPocztowy= reader["KodPocztowy"].ToString(),
+                                Ulica= reader["Ulica"].ToString(),
+                                NumerPosesji = reader["NumerPosesji"].ToString(),
+                                NumerLokalu = reader["NumerLokalu"].ToString(),
+                                PESEL = reader["PESEL"].ToString(),
+                                DataUrodzenia = reader["DataUrodzenia"].ToString(),
+                                Plec = reader["Plec"].ToString(),
+                                Email = reader["Email"].ToString(),
+                                NumerTelefonu = reader["NumerTelefonu"].ToString()
                             };
                             listaUzytkownikow.Add(uzytkownik);
                         }
@@ -129,11 +141,10 @@ namespace TestowanieOprogramowania
 
         private void WyszukajUzytkownikow(string szukanyTekst)
         {
-            string connectionString = "Data Source=LAPTOP-72SPAJ8D;Initial Catalog=MagazynTestowanieOprogramowania;Integrated Security=True; TrustServerCertificate=True;";
             string query = "SELECT * FROM dbo.Uzytkownicy WHERE Login LIKE @szukanyTekst OR Imie LIKE @szukanyTekst OR Nazwisko LIKE @szukanyTekst";
             List<Uzytkownik> listaUzytkownikow = new List<Uzytkownik>();
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(conString))
             {
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
@@ -150,6 +161,17 @@ namespace TestowanieOprogramowania
                                 Login = reader["Login"].ToString(),
                                 Imie = reader["Imie"].ToString(),
                                 Nazwisko = reader["Nazwisko"].ToString(),
+
+                                Miejscowosc = reader["Miejscowosc"].ToString(),
+                                KodPocztowy= reader["KodPocztowy"].ToString(),
+                                Ulica= reader["Ulica"].ToString(),
+                                NumerPosesji = reader["NumerPosesji"].ToString(),
+                                NumerLokalu = reader["NumerLokalu"].ToString(),
+                                PESEL = reader["PESEL"].ToString(),
+                                DataUrodzenia = reader["DataUrodzenia"].ToString(),
+                                Plec = reader["Plec"].ToString(),
+                                Email = reader["Email"].ToString(),
+                                NumerTelefonu = reader["NumerTelefonu"].ToString()
                             };
                             listaUzytkownikow.Add(uzytkownik);
                         }
