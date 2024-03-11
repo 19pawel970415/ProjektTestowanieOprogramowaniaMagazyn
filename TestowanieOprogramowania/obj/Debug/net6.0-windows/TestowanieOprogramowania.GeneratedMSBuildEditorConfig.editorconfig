@@ -14,4 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TestowanieOprogramowania
-build_property.ProjectDir = C:\Users\cayna\source\repos\ProjektTestowanieOprogramowaniaMagazyn\TestowanieOprogramowania\
+build_property.ProjectDir = C:\Users\ernes\source\repos\ProjektTestowanieOprogramowaniaMagazyn2\TestowanieOprogramowania\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
