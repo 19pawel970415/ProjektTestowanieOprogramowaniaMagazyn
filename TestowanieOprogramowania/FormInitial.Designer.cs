@@ -45,6 +45,7 @@
             panelslide.Name = "panelslide";
             panelslide.Size = new Size(200, 763);
             panelslide.TabIndex = 0;
+            panelslide.Paint += panelslide_Paint;
             // 
             // buttonLogin
             // 

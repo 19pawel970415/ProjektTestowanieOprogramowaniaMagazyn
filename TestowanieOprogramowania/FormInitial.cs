@@ -15,6 +15,8 @@ namespace TestowanieOprogramowania
         public FormInitial()
         {
             InitializeComponent();
+            //this.FormBorderStyle = FormBorderStyle.None;
+            //this.WindowState = FormWindowState.Maximized;
         }
 
         private void mainpanel_Paint(object sender, PaintEventArgs e)

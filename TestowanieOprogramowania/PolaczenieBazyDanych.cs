@@ -9,7 +9,7 @@ namespace TestowanieOprogramowania
     public static class PolaczenieBazyDanych
     {
 
-        public static string DataSource { get; set; } = "TUF15";
+        public static string DataSource { get; set; } = "LAPTOP-72SPAJ8D";
         public static string InitialCatalog { get; set; } = "MagazynTestowanieOprogramowania";
         public static bool IntegratedSecurity { get; set; } = true;
         public static bool TrustServerCertificate { get; set; } = true;

@@ -9,14 +9,14 @@ namespace TestowanieOprogramowania
     public partial class Form1 : Form
     {
 
-        
+
 
         private ZarzadzanieVoidami zarzadzanieVoidami;
-        
+
         public Form1()
         {
             InitializeComponent();
-            
+
             zarzadzanieVoidami = new ZarzadzanieVoidami();
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             string StringPolaczeniowy = PolaczenieBazyDanych.StringPolaczeniowy();
@@ -47,7 +47,7 @@ namespace TestowanieOprogramowania
 
                     zarzadzanieVoidami.UsunUzytkownikaZBazy(userId);
 
-                     OdswiezDataGridView();
+                    OdswiezDataGridView();
                 }
             }
             else
@@ -63,7 +63,7 @@ namespace TestowanieOprogramowania
             zarzadzanieVoidami.WyszukajUzytkownikow(textBoxSzukaj.Text);
         }
 
-        
+
 
 
         private void buttonDodajUzytkownika_Click_1(object sender, EventArgs e)
@@ -99,7 +99,7 @@ namespace TestowanieOprogramowania
                 MessageBox.Show("Proszê zaznaczyæ wiersz do edycji", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-        
+
 
     }
 }

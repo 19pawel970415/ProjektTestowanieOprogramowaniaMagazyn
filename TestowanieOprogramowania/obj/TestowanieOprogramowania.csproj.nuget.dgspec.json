@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ernes\\source\\repos\\ProjektTestowanieOprogramowaniaMagazyn2\\TestowanieOprogramowania\\TestowanieOprogramowania.csproj": {}
+    "C:\\Users\\cayna\\source\\repos\\ProjektTestowanieOprogramowaniaMagazyn\\TestowanieOprogramowania\\TestowanieOprogramowania.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ernes\\source\\repos\\ProjektTestowanieOprogramowaniaMagazyn2\\TestowanieOprogramowania\\TestowanieOprogramowania.csproj": {
+    "C:\\Users\\cayna\\source\\repos\\ProjektTestowanieOprogramowaniaMagazyn\\TestowanieOprogramowania\\TestowanieOprogramowania.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ernes\\source\\repos\\ProjektTestowanieOprogramowaniaMagazyn2\\TestowanieOprogramowania\\TestowanieOprogramowania.csproj",
+        "projectUniqueName": "C:\\Users\\cayna\\source\\repos\\ProjektTestowanieOprogramowaniaMagazyn\\TestowanieOprogramowania\\TestowanieOprogramowania.csproj",
         "projectName": "TestowanieOprogramowania",
-        "projectPath": "C:\\Users\\ernes\\source\\repos\\ProjektTestowanieOprogramowaniaMagazyn2\\TestowanieOprogramowania\\TestowanieOprogramowania.csproj",
-        "packagesPath": "C:\\Users\\ernes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ernes\\source\\repos\\ProjektTestowanieOprogramowaniaMagazyn2\\TestowanieOprogramowania\\obj\\",
+        "projectPath": "C:\\Users\\cayna\\source\\repos\\ProjektTestowanieOprogramowaniaMagazyn\\TestowanieOprogramowania\\TestowanieOprogramowania.csproj",
+        "packagesPath": "C:\\Users\\cayna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cayna\\source\\repos\\ProjektTestowanieOprogramowaniaMagazyn\\TestowanieOprogramowania\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ernes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cayna\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -69,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
